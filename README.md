@@ -2,7 +2,7 @@
 
 Windows 版 Claude Desktop 简体中文汉化补丁。适用于官方 MSIX / WindowsApps 安装版及新版 `AppData\Local\AnthropicClaude` 安装版。
 
-> 当前测试版本：Claude Desktop `1.8555.2`
+> 当前测试版本：Claude Desktop `1.9255.0`
 
 ## 效果截图
 
@@ -27,7 +27,7 @@ Windows 版 Claude Desktop 简体中文汉化补丁。适用于官方 MSIX / Win
 
 从 GitHub Release 下载：
 
-[claude-desktop-zh-cn-patch-1.8555.2.zip](https://github.com/guhaigg/claude-desktop-zh-cn-patch/releases/download/v1.8555.2/claude-desktop-zh-cn-patch-1.8555.2.zip)
+[claude-desktop-zh-cn-patch-1.9255.0.zip](https://github.com/haotianx26-pixel/-/releases/download/v1.9255.0/claude-desktop-zh-cn-patch-1.9255.0.zip)
 
 仓库地址：
 
@@ -105,8 +105,10 @@ patch/
       i18n/
         zh-CN.json
         en-US.json
-      assets/v1/
-        *.js
+docs/
+  screenshots/
+    home.png
+    settings-claude-code.png
 docs/
   screenshots/
     home.png
@@ -125,7 +127,6 @@ scripts/
 - `patch/resources/zh-CN.json`：桌面端外壳中文语言包。
 - `patch/resources/en-US.json`：中文覆盖版英文槽位，用于处理仍走 `en-US` 的界面。
 - `patch/resources/ion-dist/i18n/*.json`：Claude 主界面语言表。
-- `patch/resources/ion-dist/assets/v1/*.js`：少量硬编码英文文案补丁。
 - `install.ps1`：安装补丁并生成备份。
 - `restore.ps1`：从备份恢复。
 - `install-uac.vbs` / `restore-uac.vbs`：触发 UAC 的双击启动器。
@@ -200,7 +201,7 @@ powershell -ExecutionPolicy Bypass -File .\install.ps1 -NoForceEnglishSlot
 
 - 历史会话标题、项目名、用户输入内容不会自动翻译。
 - 部分非常深层的实验功能、远程错误信息、动态服务端返回文案可能仍是英文。
-- 补丁与 Claude Desktop 版本强相关，目前按 `1.8555.2` 制作。
+- 补丁与 Claude Desktop 版本强相关，目前按 `1.9255.0` 制作。
 
 ## License
 
